@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#1a1b26] text-[#a9b1d6] antialiased selection:bg-[#7aa2f7]/30 selection:text-[#7aa2f7];
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#1a1b26];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#414868] rounded-full hover:bg-[#565f89] transition-colors;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
